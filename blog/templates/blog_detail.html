@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>My Blog Home</h1>
+  <p>Welcome to Beilei Tang Blog</p>
+  <h2>Dynamic content</h2>
+  <p>The Blog has the following record counts:</p>
+  <ul>
+    <li><strong>Blogs:</strong> {{ num_books }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+
+  </ul>
+
+    <!-- Add additional CSS in static file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    {% load static %}
+    <img src="{% static 'catalog/images/local_library_model_uml.png' %}" alt="UML diagram" style="width:555px;height:540px;">
+
+{% endblock %}
