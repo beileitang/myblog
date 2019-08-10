@@ -1,5 +1,37 @@
-.sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
+@font-face {
+  font-family: "myFont";
+  src: url("myFont.ttf");
 }
+
+h1,h2{
+  text-align: center; }
+
+body {
+  line-height: 1.7;
+  color: darkslategray;
+  font-weight: 300;
+  font-size: .9rem; }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+div {
+  width: 220px;
+  padding: 20px;
+  margin: 10px;
+  line-height: 2;
+  background-color: lightblue;
+  text-align: center;
+  display: inline-block;
+}
+
+.complete {
+  border-style: solid;
+}
+
+

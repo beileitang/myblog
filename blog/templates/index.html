@@ -1,17 +1,30 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h1>My Blog Home</h1>
-  <p>Welcome to Beilei Tang Blog</p>
-  <h2>Dynamic content</h2>
-  <p>The Blog has the following record counts:</p>
-  <ul>
-    <li><strong>Blogs:</strong> {{ num_books }}</li>
-    <li><strong>Authors:</strong> {{ num_authors }}</li>
-  </ul>
+  <h1>Beilei's Blog</h1>
+  <p></p>
+  <h2>Do you want to know about Me?</h2>
+  <p></p>
+ <div class="complete">
+  <p>Blogs: {{ num_blogs }}</p>
+</div>
+
+ <div class="complete">
+  <p>Author: {{ num_authors  }}</p>
+</div>
+
+    <div class="complete">
+      <p>Category: "None"</p>
+    </div>
+
+     <div class="complete">
+      <p>Picture: "None"</p>
+    </div>
 
     <!-- Add additional CSS in static file -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
+
 {% endblock %}
+
