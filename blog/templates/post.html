@@ -1,0 +1,44 @@
+{% extends "base_generic.html" %}
+{% load staticfiles %}
+
+
+{% block title %}Blog Page{% endblock title %}
+
+{% block content %}
+
+<div class="post-topnav">
+  <a href="#">Home Page</a>
+  <a href="#">Project</a>
+  <a href="#">Resume</a>
+</div>
+
+    <div class ="post-page">
+    {% for blog in post_list %}
+        <!-- post content -->
+            <div class="post-page">
+                <div class="card h-100">
+                    <div class="post-row">
+                        <div class="post-column">
+                        <h4 class="post-header">Title: {{ blog.title }}</h4>
+                             <!-- 摘要 -->
+                        </div>
+                        <!--post context-->
+                        <div class="post-body">
+                            <p class="post-text"> Content:</p>
+                            <!--filte http html tag-->
+                            <p>{{ blog.body|truncatechars:200|striptags}}</p>
+                            <!-- 注脚 -->
+                            <div class="post-footer">
+                                <a class="link" href="/blog/blog_post/detail">Read</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</div>
+{% endblock content %}
+

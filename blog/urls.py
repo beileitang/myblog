@@ -1,12 +1,12 @@
 
 from . import views
 from django.urls import path
+from django.conf.urls import url
 
 urlpatterns = [
 	path('', views.index, name='main-page'),
-    # blog_content/ path is views.blogDetail
-    path('blog_content/', views.BlogDetail, name='Blog_page'),
-    # blog_content/ path is views.blogDetail
-    path('content-view/<int:pk>/', views.BlogDetailView.as_view(), name='...'),
+    #path('Blog_post/', views.Blog_post, name='Blog_post'),
+    path('blog_post/', views.blog_post, name='post'),
+
 ]
 

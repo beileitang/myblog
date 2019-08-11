@@ -10,17 +10,27 @@
 
 <head>
     <meta charset="utf-8">
-    <title>{% block title %} i am a girl{% endblock title %}</title>
+    <title>{% block title %} Beilei Blog{% endblock title %}</title>
     <!--refer to boostrap.css-->
+
+    <style type="text/css">
+        body{
+            padding-top:0;
+            padding-bottom:25px
+            }
+    </style>
     <link ref="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 </head>
 
+
+
 <body>
     {% include 'header.html' %}
-    <!--content-->
+    <!--content index -->
 
 
-    {% block content %}{% endblock %}
+    {% block content %}{% endblock content %}
+
     <!--footpage-->
     {%  include 'footer.html' %}
 </body>

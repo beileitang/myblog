@@ -1,28 +1,38 @@
 {% extends "base_generic.html" %}
 {% load static %}
 
+{% block title %}Home Page{% endblock title %}
+
 {% block content %}
-<p class="main">
-  <h1 class="main_page_category"> </h1>
-    <!--personal picture-->
+    <div class="post-topnav">
+        <a href="/blog/blog_post/">Articles</a>
+        <a href="#">Project</a>
+        <a href="#">Resume</a>
+    </div>
 
- <div class="main-container">
-  <i class="fas fa-folder-open"></i>
-  <ul>
-      <li> Blogs: {{ num_blogs }}</p></li>
-            <a class="nav-link" href="/blog/blog_content">articles</a>
-      <li> Author: {{ num_authors  }}</p></li>
-            <a class="nav-link" href="/blog/blog_content">Background</a>
-      <li>Category: </li>
-             <a class="nav-link" href="/blog/blog_content">Project</a>
-  </ul>
- </div>
+    <div class="main-block">
+        <div class="main-container">
+            <ul>
+                <li><i class="fas fa-folder-open"></i>
+                    <a href="#">Number of articles: {{ num_blogs }}</a><li>
+                <li><i class="fas fa-folder-open"></i>
+                    <a href="#">Number of Projects: {{ num_blogs }}</a></li>
+                <li><i class="fas fa-folder-open"></i>
+                    <a href="#">Number of Pictures: {{ num_blogs }}</a></li>
+            </ul>
+         </div>
+    </div>
 
-   <img class="myphoto" src="{% static "image/mypicture.jpg"%}" alt="my img" width="300" height="250">
+    <div class="second-block">
+        <div class="second-container">
 
-    <!-- Add additional CSS in static file -->
 
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</p>
-{% endblock %}
+                <img class="personal-pic" src="{% static "image/myself.jpg"%}" alt="my img" width="240" height="320"
+        </div>
+    </div>
+
+
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock content%}
 
