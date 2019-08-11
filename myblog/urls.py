@@ -17,9 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # page for end user
     path('admin/', admin.site.urls),
-]
-
-urlpatterns += [
+    # home page
     path('', include('blog.urls')),
-    ]
+    path('blog/', include('blog.urls')),
+    path('blog/', include('blog.urls')),
+
+
+]
+# 在我们创建的基础网站上，更新 /myblog/urls.py 文件。
+# 以确保每当收到以blog开头的URL时，URLConf模块中的blog.urls 会处理剩余的字符串。
+

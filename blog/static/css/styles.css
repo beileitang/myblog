@@ -1,37 +1,90 @@
-@font-face {
-  font-family: "myFont";
-  src: url("myFont.ttf");
+html{
+  height:100%
+
+}
+body{
+  min-height:100%;margin:0;padding:0;position:relative;
+
 }
 
-h1,h2{
-  text-align: center; }
+/*header*/
+header {
+  background-color: #fff3cd;
 
-body {
-  line-height: 1.7;
-  color: darkslategray;
-  font-weight: 300;
-  font-size: .9rem; }
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
-}
-
-div {
-  width: 220px;
-  padding: 20px;
-  margin: 10px;
-  line-height: 2;
-  background-color: lightblue;
+div.header_position {
   text-align: center;
-  display: inline-block;
+  border: 3px black #73AD21;
+  border-style: double;
+  background-color: #fff3cd;}
 }
 
-.complete {
-  border-style: solid;
+
+/*header nav bar*/
+  .nav-bar h1{
+  background-color: white;
+  color: black;
+  font-size: 10mm;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+/*main page */
+p.main{
+  padding-bottom:100px;background-color: #000000;
+}
+
+div.main-container{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #white;
+  border: 1px solid;
+  padding: 75px;
+  box-shadow: 5px 10px #888888;
+  text-color:#F0FFF0;
+}
+.main-container ul{
+
 }
 
 
+/*footer */
+/*footer position */
+footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+
+}
+
+/*main footer*/
+.footer-container{
+  font-style: oblique;
+
+}
+/*copyright*/
+.footer-copyright{
+  background: #000000;
+  padding: 5px 0;
+  font-size:10px;
+}
+
+.footer-copyright p.b{
+    color: #000000;
+    margin: 1px 0 0;
+    right: 10%
+    font-style: oblique;
+    position: absolute;
+}
+
+footer .widget-title{
+  position: absolute;
+  top:-30%
+}
