@@ -1,8 +1,9 @@
 {% extends "base_generic.html" %}
+{% load static %}
 
 {% block content %}
 <p class="main">
-  <h1 class="main_page_category"></h1>
+  <h1 class="main_page_category"> </h1>
     <!--personal picture-->
 
  <div class="main-container">
@@ -15,11 +16,12 @@
       <li>Category: </li>
              <a class="nav-link" href="/blog/blog_content">Project</a>
   </ul>
-    <!--<img class="myphoto" src="paris.jpg" width="400" height="300">-->
  </div>
 
+   <img class="myphoto" src="{% static "image/mypicture.jpg"%}" alt="my img" width="300" height="250">
+
     <!-- Add additional CSS in static file -->
-    {% load static %}
+
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </p>
 {% endblock %}

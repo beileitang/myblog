@@ -39,6 +39,7 @@ div.header_position {
 /*main page */
 p.main{
   padding-bottom:100px;background-color: #000000;
+
 }
 
 div.main-container{
@@ -48,11 +49,13 @@ div.main-container{
   padding: 75px;
   box-shadow: 5px 10px #888888;
   text-color:#F0FFF0;
-}
-.main-container ul{
 
 }
-
+img.myphoto{
+  position: absolute;
+  top:200px;
+  left:400px;
+}
 
 /*footer */
 /*footer position */

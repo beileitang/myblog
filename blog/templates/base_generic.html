@@ -18,15 +18,11 @@
 <body>
     {% include 'header.html' %}
     <!--content-->
+
+
     {% block content %}{% endblock %}
     <!--footpage-->
     {%  include 'footer.html' %}
-    <!--refer to jquery and popper-->
-    <script src="{% static 'jquery/jquery.js'%}"></script>
-    <script src="{% static 'popper/popper.js'%}"></script>
-
-    <!--bootstrao.js-->
-    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
 </body>
 
 </html>
