@@ -1,7 +1,12 @@
 {%  load staticfiles %}
 <!DOCTYPE html>
+
 <html lang="en">
 ...
+<!-- css model import could use link and import-->
+<!--link和@import的最根本区别就是，link是一个html的一个标签，而@import是css的一个标签。
+link属于XHTML标签（功能不局限于导入CSS），而@import则是CSS提供的一种规则
+（CSS2.1提出的规范，老浏览器不兼容）。-->
 <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -11,23 +16,15 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %} Beilei Blog{% endblock title %}</title>
-    <!--refer to boostrap.css-->
 
-    <style type="text/css">
-        body{
-            padding-top:0;
-            padding-bottom:25px
-            }
-    </style>
     <link ref="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
 </head>
 
 
-
 <body>
+
     {% include 'header.html' %}
     <!--content index -->
-
 
     {% block content %}{% endblock content %}
 

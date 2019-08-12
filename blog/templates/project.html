@@ -1,0 +1,32 @@
+{% extends "blog_base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+        <div class="project-topnav">
+        <a href="/blog/">Home Page</a>
+        <a href="/project/">Project</a>
+        <a href="/blog/resume/">Resume</a>
+        </div>
+
+
+<div class="project-page">
+
+    <form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value=""><br>
+    Last name:<br>
+    <input type="text" name="lastname" value=""><br>
+    Comments:<br>
+    <textarea name="message" rows="5" cols="30">
+    </textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</div>
+{% endblock content %}

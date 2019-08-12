@@ -35,3 +35,13 @@ def detail(request,id):
         raise Http404
     return render(request, 'post.html', {'post':post})
 
+
+def blog_post_resume(request):
+    "shows the content of blogs"
+    post_list = Blog.objects.all()
+    return render(request, 'resume.html', {'post_list': post_list})
+
+def blog_post_project(request):
+    "shows the content of blogs"
+    post_list = Blog.objects.all()
+    return render(request, 'project.html', {'post_list': post_list})

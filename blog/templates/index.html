@@ -1,37 +1,22 @@
 {% extends "base_generic.html" %}
 {% load static %}
 
-{% block title %}Home Page{% endblock title %}
+
 
 {% block content %}
+
+
+
     <div class="post-topnav">
-        <a href="/blog/blog_post/">Articles</a>
-        <a href="#">Project</a>
-        <a href="#">Resume</a>
-    </div>
-
-    <div class="main-block">
-        <div class="main-container">
-            <ul>
-                <li><i class="fas fa-folder-open"></i>
-                    <a href="#">Number of articles: {{ num_blogs }}</a><li>
-                <li><i class="fas fa-folder-open"></i>
-                    <a href="#">Number of Projects: {{ num_blogs }}</a></li>
-                <li><i class="fas fa-folder-open"></i>
-                    <a href="#">Number of Pictures: {{ num_blogs }}</a></li>
-            </ul>
-         </div>
-    </div>
-
-    <div class="second-block">
-        <div class="second-container">
-
-
-                <img class="personal-pic" src="{% static "image/myself.jpg"%}" alt="my img" width="240" height="320"
-        </div>
+        <a href="/blog/">Home Page</a>
+        <a href="/project/">Project</a>
+        <a href="/resume/">Resume</a>
     </div>
 
 
+    <div class="main-page">
+         <img class="fullbody" src="{% static "image/fullbody.jpg"%}" alt="tb";>
+    </div>
 
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 {% endblock content%}
